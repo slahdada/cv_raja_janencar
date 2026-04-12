@@ -1,0 +1,80 @@
+/* ===============================================
+   ADDITIONAL PREMIUM POLISH
+   =============================================== */
+
+/* Selection */
+::selection {
+    background: rgba(184, 147, 90, 0.25);
+    color: var(--clr-gold-dark);
+}
+
+/* Focus rings */
+:focus-visible {
+    outline: 2px solid var(--clr-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Smooth section transitions */
+section {
+    transition: background 0.4s ease;
+}
+
+/* Enhanced glow for gold elements in dark mode */
+[data-theme="dark"] .hero-image-ring {
+    opacity: 0.9;
+}
+
+[data-theme="dark"] .btn-primary {
+    box-shadow: 0 4px 20px rgba(184, 147, 90, 0.35);
+}
+
+[data-theme="dark"] .section-tag {
+    box-shadow: 0 0 20px rgba(184, 147, 90, 0.1);
+}
+
+/* Card hover glow in dark mode */
+[data-theme="dark"] .about-card:hover,
+[data-theme="dark"] .edu-card:hover,
+[data-theme="dark"] .lang-card:hover,
+[data-theme="dark"] .skills-block:hover {
+    box-shadow: 0 8px 40px rgba(184, 147, 90, 0.12);
+}
+
+/* Navbar mobile menu close button */
+.nav-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-text);
+}
+
+/* Print styles */
+@media print {
+
+    .navbar,
+    .scroll-indicator,
+    .theme-toggle,
+    .lang-selector,
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        min-height: 0;
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

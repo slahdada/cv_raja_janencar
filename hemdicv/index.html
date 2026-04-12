@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hemdi Raja – Directrice Administrative et Financière | Portfolio Professionnel" />
+    <meta name="keywords" content="Hemdi Raja, Finance, Administration, Comptabilité, Tunis, Tunisie" />
+    <meta name="author" content="Hemdi Raja" />
+    <title>Hemdi Raja – Directrice Administrative & Financière</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">HR</div>
+            <div class="preloader-bar">
+                <div class="preloader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CURSOR ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">HR</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-i18n="nav_home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">À Propos</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Expérience</a></li>
+                <li><a href="#education" class="nav-link" data-i18n="nav_education">Formation</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Compétences</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <!-- Language Selector -->
+                <div class="lang-selector">
+                    <button class="lang-btn active" onclick="setLanguage('fr')">FR</button>
+                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('ar')">AR</button>
+                </div>
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <!-- Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge">
+                    <i class="fas fa-briefcase"></i>
+                    <span data-i18n="hero_badge">Experte Finance & Administration</span>
+                </div>
+                <h1 class="hero-name">Hemdi <span class="gradient-text">Raja</span></h1>
+                <h2 class="hero-title" data-i18n="hero_title">Directrice Administrative et Financière</h2>
+                <p class="hero-tagline" data-i18n="hero_tagline">
+                    Professionnelle en administration, finance, comptabilité et gestion avec une solide expérience et
+                    une maîtrise des outils numériques modernes.
+                </p>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+21622877051">+216 22 877 051</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:rajahemdi2019@gmail.com">rajahemdi2019@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ariana, Tunis, Tunisie</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-i18n="btn_contact">Me Contacter</span>
+                    </a>
+                    <a href="cv_hemdi_raja.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="btn_cv">Télécharger CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="profile-wrapper">
+                    <div class="profile-ring ring-1"></div>
+                    <div class="profile-ring ring-2"></div>
+                    <div class="profile-ring ring-3"></div>
+                    <div class="profile-photo-container">
+                        <img src="profile.jpg" alt="Hemdi Raja" class="profile-photo" id="profilePhoto" />
+                    </div>
+                    <div class="profile-badge badge-top">
+                        <i class="fas fa-star"></i>
+                        <span>+10 ans</span>
+                    </div>
+                    <div class="profile-badge badge-bottom">
+                        <i class="fas fa-building"></i>
+                        <span data-i18n="badge_expert">Expert Finance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about">
+                <div class="scroll-indicator">
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="about_tag">À Propos de Moi</span>
+                <h2 class="section-title" data-i18n="about_title">Profil Professionnel</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="about-lead" data-i18n="about_lead">
+                        Professionnelle chevronnée avec plus de 10 ans d'expérience dans les domaines de la finance, de
+                        la comptabilité et de la gestion administrative.
+                    </p>
+                    <p data-i18n="about_p1">
+                        Forte d'une expertise solide en gestion financière et administrative, je maîtrise les outils
+                        numériques modernes et les logiciels de gestion d'entreprise. Mon parcours m'a permis d'acquérir
+                        une vision globale des enjeux financiers et organisationnels des entreprises.
+                    </p>
+                    <p data-i18n="about_p2">
+                        Diplômée en Ingénierie d'Entreprises et Commerce International, je combine excellence académique
+                        et expérience terrain pour vous apporter des solutions efficaces et durables.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag"><i class="fas fa-chart-line"></i> <span data-i18n="tag_finance">Gestion
+                                Financière</span></span>
+                        <span class="tag"><i class="fas fa-cogs"></i> <span data-i18n="tag_admin">Management
+                                Administratif</span></span>
+                        <span class="tag"><i class="fas fa-calculator"></i> <span
+                                data-i18n="tag_accounting">Comptabilité</span></span>
+                        <span class="tag"><i class="fas fa-laptop-code"></i> <span data-i18n="tag_digital">Outils
+                                Numériques</span></span>
+                        <span class="tag"><i class="fas fa-users"></i> <span data-i18n="tag_org">Organisation
+                                Corporate</span></span>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card glass">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label" data-i18n="stat_years">Années d'Expérience</div>
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label" data-i18n="stat_companies">Entreprises</div>
+                        <div class="stat-icon"><i class="fas fa-building"></i></div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label" data-i18n="stat_projects">Projets Réalisés</div>
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    </div>
+                    <div class="stat-card glass">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label" data-i18n="stat_langs">Langues Maîtrisées</div>
+                        <div class="stat-icon"><i class="fas fa-language"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="exp_tag">Parcours</span>
+                <h2 class="section-title" data-i18n="exp_title">Expérience Professionnelle</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <!-- Job 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge current" data-i18n="exp1_period">2019 – Présent</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp1_title">Directrice Administrative et Financière
+                                </h3>
+                                <p class="company"><i class="fas fa-building"></i> JANENE RENT A CAR – Tunis</p>
+                            </div>
+                            <span class="job-badge current-badge" data-i18n="badge_current">En poste</span>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp1_r1"><i class="fas fa-chevron-right"></i> Classification des dossiers
+                                comptables</li>
+                            <li data-i18n="exp1_r2"><i class="fas fa-chevron-right"></i> Préparation des fiches de paie
+                            </li>
+                            <li data-i18n="exp1_r3"><i class="fas fa-chevron-right"></i> Préparation des retenues à la
+                                source</li>
+                            <li data-i18n="exp1_r4"><i class="fas fa-chevron-right"></i> Recouvrement des créances</li>
+                            <li data-i18n="exp1_r5"><i class="fas fa-chevron-right"></i> Gestion des contrats de vente
+                                et de location</li>
+                            <li data-i18n="exp1_r6"><i class="fas fa-chevron-right"></i> Facturation via le logiciel
+                                Dolibarr</li>
+                            <li data-i18n="exp1_r7"><i class="fas fa-chevron-right"></i> Communication clients et
+                                gestion des réservations</li>
+                            <li data-i18n="exp1_r8"><i class="fas fa-chevron-right"></i> Suivi de l'activité du parc
+                                automobile</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2018 – 2019</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp2_title">Assistante Comptable</h3>
+                                <p class="company"><i class="fas fa-building"></i> Cabinet Ahmed Ben Moallem – Tunis</p>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp2_r1"><i class="fas fa-chevron-right"></i> Préparation des fiches de paie
+                            </li>
+                            <li data-i18n="exp2_r2"><i class="fas fa-chevron-right"></i> Déclarations fiscales et
+                                sociales</li>
+                            <li data-i18n="exp2_r3"><i class="fas fa-chevron-right"></i> Préparation des acomptes
+                                provisionnels</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2015 – 2017</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp3_title">Assistante Comptable</h3>
+                                <p class="company"><i class="fas fa-building"></i> Cabinet Coffice Hafedh Boukhris –
+                                    Tunis</p>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp3_r1"><i class="fas fa-chevron-right"></i> Saisie des données comptables
+                            </li>
+                            <li data-i18n="exp3_r2"><i class="fas fa-chevron-right"></i> Validation des documents
+                                bancaires</li>
+                            <li data-i18n="exp3_r3"><i class="fas fa-chevron-right"></i> Rapprochement bancaire</li>
+                            <li data-i18n="exp3_r4"><i class="fas fa-chevron-right"></i> Justification des comptes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2014 – 2015</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp4_title">Contrôleur de Gestion</h3>
+                                <p class="company"><i class="fas fa-building"></i> AL Multimédia – Tunis</p>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp4_r1"><i class="fas fa-chevron-right"></i> Planification prévisionnelle et
+                                budgétaire</li>
+                            <li data-i18n="exp4_r2"><i class="fas fa-chevron-right"></i> Analyse des tableaux de bord
+                            </li>
+                            <li data-i18n="exp4_r3"><i class="fas fa-chevron-right"></i> Suivi des performances</li>
+                            <li data-i18n="exp4_r4"><i class="fas fa-chevron-right"></i> Analyse des écarts statistiques
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2013</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp5_title">Enquêtrice</h3>
+                                <p class="company"><i class="fas fa-building"></i> ITCEQ – Sousse</p>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp5_r1"><i class="fas fa-chevron-right"></i> Recherche statistique sur les
+                                entreprises et l'environnement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 6 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-date">
+                        <span class="date-badge">2013</span>
+                    </div>
+                    <div class="timeline-card glass">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="job-title" data-i18n="exp6_title">Stage de Fin d'études</h3>
+                                <p class="company"><i class="fas fa-building"></i> ICAR – Sousse</p>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li data-i18n="exp6_r1"><i class="fas fa-chevron-right"></i> Intelligence économique</li>
+                            <li data-i18n="exp6_r2"><i class="fas fa-chevron-right"></i> Analyse de la stratégie
+                                d'entreprise</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="edu_tag">Parcours Académique</span>
+                <h2 class="section-title" data-i18n="edu_title">Formation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card glass" data-aos="fade-up" data-aos-delay="0">
+                    <div class="edu-icon"><i class="fas fa-user-graduate"></i></div>
+                    <div class="edu-year">2013</div>
+                    <h3 data-i18n="edu1_title">Master Professionnel</h3>
+                    <p class="edu-field" data-i18n="edu1_field">Ingénierie d'Entreprises et Commerce International</p>
+                    <p class="edu-institution"><i class="fas fa-university"></i> <span data-i18n="edu1_school">Faculté
+                            des Sciences Économiques et de Gestion de Sousse</span></p>
+                </div>
+                <div class="edu-card glass" data-aos="fade-up" data-aos-delay="150">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="edu-year">2011</div>
+                    <h3 data-i18n="edu2_title">Licence</h3>
+                    <p class="edu-field" data-i18n="edu2_field">Gestion – Spécialité Finance</p>
+                    <p class="edu-institution"><i class="fas fa-university"></i> <span data-i18n="edu2_school">Faculté
+                            de Droit et de Sciences Économiques et Politiques de Sousse</span></p>
+                </div>
+                <div class="edu-card glass" data-aos="fade-up" data-aos-delay="300">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-year">2007</div>
+                    <h3 data-i18n="edu3_title">Baccalauréat</h3>
+                    <p class="edu-field" data-i18n="edu3_field">Sciences Expérimentales</p>
+                    <p class="edu-institution"><i class="fas fa-university"></i> <span data-i18n="edu3_school">Lycée de
+                            Sbikha</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="skills_tag">Savoir-Faire</span>
+                <h2 class="section-title" data-i18n="skills_title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Professional Skills -->
+                <div class="skills-category" data-aos="fade-right">
+                    <h3 class="skills-cat-title"><i class="fas fa-briefcase"></i> <span
+                            data-i18n="skills_pro">Compétences Professionnelles</span></h3>
+                    <div class="skill-bar-group">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span data-i18n="sk_finance">Services Financiers</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span data-i18n="sk_accounting">Comptabilité</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span data-i18n="sk_admin">Management Administratif</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span data-i18n="sk_analysis">Analyse Métier</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Skills -->
+                <div class="skills-category" data-aos="fade-left">
+                    <h3 class="skills-cat-title"><i class="fas fa-tools"></i> <span
+                            data-i18n="skills_soft">Logiciels</span></h3>
+                    <div class="skill-cards">
+                        <div class="skill-chip"><i class="fas fa-cube"></i> Dolibarr</div>
+                        <div class="skill-chip"><i class="fas fa-cubes"></i> Odoo</div>
+                        <div class="skill-chip"><i class="fab fa-microsoft"></i> Word</div>
+                        <div class="skill-chip"><i class="fas fa-table"></i> Excel</div>
+                        <div class="skill-chip"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+                        <div class="skill-chip"><i class="fas fa-layer-group"></i> OnlyLogiciel</div>
+                    </div>
+
+                    <h3 class="skills-cat-title mt-2"><i class="fas fa-code"></i> <span
+                            data-i18n="skills_digital">Compétences Numériques</span></h3>
+                    <div class="skill-cards">
+                        <div class="skill-chip"><i class="fab fa-html5"></i> HTML</div>
+                        <div class="skill-chip"><i class="fab fa-css3-alt"></i> CSS</div>
+                        <div class="skill-chip"><i class="fab fa-js-square"></i> JavaScript</div>
+                        <div class="skill-chip"><i class="fas fa-paint-brush"></i> UI/UX</div>
+                        <div class="skill-chip"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skills-category skills-full" data-aos="fade-up">
+                    <h3 class="skills-cat-title"><i class="fas fa-globe"></i> <span
+                            data-i18n="skills_langs">Langues</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-card glass">
+                            <div class="lang-flag">🇹🇳</div>
+                            <h4 data-i18n="lang_ar">Arabe</h4>
+                            <div class="lang-level">
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                            </div>
+                            <span class="lang-label" data-i18n="lang_native">Langue Maternelle</span>
+                        </div>
+                        <div class="lang-card glass">
+                            <div class="lang-flag">🇫🇷</div>
+                            <h4 data-i18n="lang_fr">Français</h4>
+                            <div class="lang-level">
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                            </div>
+                            <span class="lang-label" data-i18n="lang_fluent">Courant</span>
+                        </div>
+                        <div class="lang-card glass">
+                            <div class="lang-flag">🇬🇧</div>
+                            <h4 data-i18n="lang_en">Anglais</h4>
+                            <div class="lang-level">
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot active"></div>
+                                <div class="lang-dot"></div>
+                            </div>
+                            <span class="lang-label" data-i18n="lang_fluent2">Courant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="contact_tag">Restons en Contact</span>
+                <h2 class="section-title" data-i18n="contact_title">Contactez-Moi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 data-i18n="contact_intro">Parlons de Votre Projet</h3>
+                    <p data-i18n="contact_desc">N'hésitez pas à me contacter pour toute opportunité professionnelle ou
+                        collaboration.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <span class="contact-label" data-i18n="c_phone">Téléphone</span>
+                                <a href="tel:+21622877051" class="contact-value">+216 22 877 051</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label" data-i18n="c_email">Email</span>
+                                <a href="mailto:rajahemdi2019@gmail.com"
+                                    class="contact-value">rajahemdi2019@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label" data-i18n="c_location">Localisation</span>
+                                <span class="contact-value">Ariana 2080, Tunis, Tunisie</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="cv_hemdi_raja.pdf" download class="btn btn-primary mt-2">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-i18n="btn_cv2">Télécharger mon CV</span>
+                    </a>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form glass" novalidate>
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name">Nom Complet</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email">Adresse Email</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="form_subject">Sujet</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag"></i>
+                                <input type="text" id="subject" name="subject" placeholder="Objet du message" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_message">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message..."
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="form_send">Envoyer le Message</span>
+                        </button>
+                        <div id="formSuccess" class="form-success hidden">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-i18n="form_success">Message envoyé avec succès !</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">HR</span>
+                    <p data-i18n="hero_title">Directrice Administrative et Financière</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home" data-i18n="nav_home">Accueil</a>
+                    <a href="#about" data-i18n="nav_about">À Propos</a>
+                    <a href="#experience" data-i18n="nav_experience">Expérience</a>
+                    <a href="#skills" data-i18n="nav_skills">Compétences</a>
+                    <a href="#contact" data-i18n="nav_contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <strong>Hemdi Raja</strong> – <span data-i18n="hero_title">Directrice Administrative et
+                        Financière</span></p>
+                <div class="footer-socials">
+                    <a href="mailto:rajahemdi2019@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+21622877051" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

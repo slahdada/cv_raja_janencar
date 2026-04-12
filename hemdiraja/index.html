@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hemdi Raja — Administrative and Financial Manager. Portfolio professionnel futuriste luxe." />
+  <title>Hemdi Raja | Administrative & Financial Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+     CURSOR PERSONNALISÉ
+═══════════════════════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════════════
+     PARTICULES DE FOND
+═══════════════════════════════════════════ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-initials">HR</span>
+        <span class="logo-name" data-i18n="nav_logo">Hemdi Raja</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+        <li><a href="#experience" data-i18n="nav_exp">Expérience</a></li>
+        <li><a href="#education" data-i18n="nav_edu">Formation</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <!-- Sélecteur de langue -->
+        <div class="lang-selector" id="langSelector">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">عر</button>
+        </div>
+        <!-- Toggle thème -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Menu mobile -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-glow"></div>
+        <div class="hero-photo-ring"></div>
+        <div class="hero-photo-frame">
+          <img src="profile.jpg?v=2" alt="Hemdi Raja — Administrative and Financial Manager" class="hero-photo"
+            id="heroPhoto" />
+        </div>
+        <div class="hero-photo-badge">
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-subtitle-top" data-i18n="hero_subtitle_top">Administrative & Financial Manager</p>
+        <h1 class="hero-name">Hemdi Raja</h1>
+        <div class="hero-title-line">
+          <span class="title-line-bar"></span>
+          <span class="hero-tagline" data-i18n="hero_tagline">Excellence Administrative · Leadership Financier</span>
+          <span class="title-line-bar"></span>
+        </div>
+        <p class="hero-bio" data-i18n="hero_bio">Professionnelle senior en administration, finance et comptabilité —
+          alliant rigueur analytique, maîtrise digitale et vision stratégique au service de l'excellence
+          organisationnelle.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            <span data-i18n="hero_cta1">Me contacter</span>
+          </a>
+          <a href="mailto:rajahemdi2019@gmail.com" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            <span data-i18n="hero_cta2">Envoyer un e-mail</span>
+          </a>
+          <a href="tel:+21622877051" class="btn btn-outline">
+            <i class="fas fa-phone"></i>
+            <span data-i18n="hero_cta3">Appeler</span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label" data-i18n="stat_years">Années d'exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label" data-i18n="stat_companies">Entreprises</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label" data-i18n="stat_langs">Langues</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span data-i18n="scroll_hint">Défiler</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     À PROPOS
+═══════════════════════════════════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="about_label">Profil</span>
+        <h2 class="section-title" data-i18n="about_title">À propos de moi</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fas fa-user-tie"></i></div>
+          <h3 data-i18n="about_card1_title">Profil professionnel</h3>
+          <p data-i18n="about_card1_text">Professionnelle de l'administration, de la finance, de la gestion et de la
+            comptabilité, dotée d'une solide expérience et d'une bonne maîtrise des outils informatiques. Prête à mettre
+            ses compétences au service d'une organisation structurée et ambitieuse.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+          <h3 data-i18n="about_card2_title">Localisation</h3>
+          <p>Ariana 2080, Tunis, Tunisie</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+          <h3 data-i18n="about_card3_title">Formation</h3>
+          <p data-i18n="about_card3_text">Master Professionnel en Ingénierie d'Affaires — FSEGS 2013</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fas fa-envelope"></i></div>
+          <h3>Contact</h3>
+          <p>rajahemdi2019@gmail.com<br />(+216) 22 877 051</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     EXPÉRIENCE
+═══════════════════════════════════════════ -->
+  <section class="section exp-section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="exp_label">Parcours</span>
+        <h2 class="section-title" data-i18n="exp_title">Expérience professionnelle</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp1_role">Administrative and Financial Manager</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> JANENE RENT A CAR — Tunis</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 10/2019 – <span
+                  data-i18n="present">Présent</span></span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp1_t1">Classement mensuel des dossiers comptables et préparation de la paie</li>
+              <li data-i18n="exp1_t2">Préparation des retenues à la source</li>
+              <li data-i18n="exp1_t3">Recouvrement des créances</li>
+              <li data-i18n="exp1_t4">Préparation des contrats de vente et de location, facturation sur Dolibarr</li>
+              <li data-i18n="exp1_t5">Préparation des devis, réservation par e-mail et suivi client</li>
+              <li data-i18n="exp1_t6">Suivi de l'activité du parc automobile</li>
+            </ul>
+            <div class="tl-badge current" data-i18n="badge_current">Poste actuel</div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-calculator"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp2_role">Accounting Assistant</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Cabinet Ahmed Ben Moallem — Tunis</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 10/2018 – 03/2019</span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp2_t1">Préparation de la paie</li>
+              <li data-i18n="exp2_t2">Déclarations fiscales et sociales</li>
+              <li data-i18n="exp2_t3">Préparation des acomptes provisionnels</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-file-invoice-dollar"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp3_role">Accounting Assistant</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> Cabinet Coffice Hafedh Boukhris — Tunis</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 10/2015 – 06/2017</span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp3_t1">Saisie des pièces comptables</li>
+              <li data-i18n="exp3_t2">Saisie et validation des pièces bancaires</li>
+              <li data-i18n="exp3_t3">Rapprochements bancaires</li>
+              <li data-i18n="exp3_t4">Justification des comptes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-chart-line"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp4_role">Management Controller</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> AL Multimédia — Tunis</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 06/2014 – 03/2015</span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp4_t1">Prévisions d'activité, budgets et organisation</li>
+              <li data-i18n="exp4_t2">Analyse des écarts entre réalisations et prévisions</li>
+              <li data-i18n="exp4_t3">Développement d'outils d'analyse et tableaux de bord</li>
+              <li data-i18n="exp4_t4">Mesure et analyse statistique des écarts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-search"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp5_role">Surveyor</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> ITCEQ — Sousse</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 05/2013 – 07/2013</span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp5_t1">Statistiques sur l'environnement et la situation financière des entreprises</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-card-top">
+              <div>
+                <h3 class="tl-role" data-i18n="exp6_role">Stage de fin d'études</h3>
+                <p class="tl-company"><i class="fas fa-building"></i> ICAR — Sousse</p>
+              </div>
+              <span class="tl-date"><i class="fas fa-calendar-alt"></i> 04/2013 – 06/2013</span>
+            </div>
+            <ul class="tl-tasks">
+              <li data-i18n="exp6_t1">Veille économique et stratégie d'entreprise</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     FORMATION
+═══════════════════════════════════════════ -->
+  <section class="section edu-section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="edu_label">Académique</span>
+        <h2 class="section-title" data-i18n="edu_title">Formation</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-grid reveal">
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">2013</span>
+            <h3 data-i18n="edu1_degree">Master Professionnel</h3>
+            <p class="edu-field" data-i18n="edu1_field">Ingénierie d'Affaires et Commerce International</p>
+            <p class="edu-school">FSEGS</p>
+          </div>
+        </div>
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fas fa-landmark"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">2011</span>
+            <h3 data-i18n="edu2_degree">Licence en Gestion</h3>
+            <p class="edu-field" data-i18n="edu2_field">Spécialité Finance</p>
+            <p class="edu-school">FDSEPS</p>
+          </div>
+        </div>
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <span class="edu-year">2007</span>
+            <h3 data-i18n="edu3_degree">Baccalauréat</h3>
+            <p class="edu-field" data-i18n="edu3_field">Sciences expérimentales</p>
+            <p class="edu-school" data-i18n="edu3_school">Lycée Sbikha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     COMPÉTENCES
+═══════════════════════════════════════════ -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="skills_label">Expertise</span>
+        <h2 class="section-title" data-i18n="skills_title">Compétences</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Compétences métiers -->
+      <div class="skills-block reveal">
+        <h3 class="skills-block-title"><i class="fas fa-chart-bar"></i> <span data-i18n="skills_business">Compétences
+            Métiers</span></h3>
+        <div class="skills-grid">
+          <div class="skill-pill"><i class="fas fa-coins"></i><span data-i18n="sk_finance">Services Financiers</span>
+          </div>
+          <div class="skill-pill"><i class="fas fa-folder-open"></i><span data-i18n="sk_admin">Administration</span>
+          </div>
+          <div class="skill-pill"><i class="fas fa-book"></i><span data-i18n="sk_accounting">Comptabilité</span></div>
+          <div class="skill-pill"><i class="fas fa-users"></i><span data-i18n="sk_payroll">Préparation de paie</span>
+          </div>
+          <div class="skill-pill"><i class="fas fa-file-alt"></i><span data-i18n="sk_fiscal">Déclarations
+              fiscales</span></div>
+          <div class="skill-pill"><i class="fas fa-handshake"></i><span data-i18n="sk_debt">Recouvrement</span></div>
+          <div class="skill-pill"><i class="fas fa-file-invoice"></i><span data-i18n="sk_invoicing">Facturation</span>
+          </div>
+          <div class="skill-pill"><i class="fas fa-chart-pie"></i><span data-i18n="sk_budget">Suivi budgétaire</span>
+          </div>
+          <div class="skill-pill"><i class="fas fa-university"></i><span data-i18n="sk_bank">Rapprochements
+              bancaires</span></div>
+          <div class="skill-pill"><i class="fas fa-tachometer-alt"></i><span data-i18n="sk_dashboard">Tableaux de
+              bord</span></div>
+        </div>
+      </div>
+
+      <!-- Logiciels -->
+      <div class="skills-block reveal">
+        <h3 class="skills-block-title"><i class="fas fa-laptop-code"></i> <span data-i18n="skills_software">Logiciels &
+            Outils</span></h3>
+        <div class="software-grid">
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fas fa-cogs"></i></div><span>Dolibarr</span>
+          </div>
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fas fa-layer-group"></i></div><span>Odoo</span>
+          </div>
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fab fa-microsoft"></i></div><span>Word</span>
+          </div>
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fas fa-table"></i></div><span>Excel</span>
+          </div>
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fas fa-chalkboard-teacher"></i></div><span>PowerPoint</span>
+          </div>
+          <div class="software-card glass-card">
+            <div class="sw-icon"><i class="fas fa-database"></i></div><span>OnlyLogiciel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technologies web -->
+      <div class="skills-block reveal">
+        <h3 class="skills-block-title"><i class="fas fa-code"></i> <span data-i18n="skills_tech">Technologies
+            Numériques</span></h3>
+        <p class="skills-tech-note" data-i18n="skills_tech_note">Compétences complémentaires en outils numériques et
+          technologies web</p>
+        <div class="tech-grid">
+          <div class="tech-card glass-card">
+            <div class="tech-icon tech-html"><i class="fab fa-html5"></i></div><span>HTML</span>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-icon tech-css"><i class="fab fa-css3-alt"></i></div><span>CSS</span>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-icon tech-js"><i class="fab fa-js-square"></i></div><span>JavaScript</span>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-icon tech-ui"><i class="fas fa-pencil-ruler"></i></div><span>UI/UX</span>
+          </div>
+          <div class="tech-card glass-card">
+            <div class="tech-icon tech-flutter"><i class="fas fa-mobile-alt"></i></div><span>Flutter</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Langues -->
+      <div class="skills-block reveal">
+        <h3 class="skills-block-title"><i class="fas fa-globe"></i> <span data-i18n="skills_langs">Langues</span></h3>
+        <div class="langs-grid">
+          <div class="lang-card glass-card">
+            <div class="lang-flag">🇹🇳</div>
+            <div class="lang-info">
+              <span class="lang-name" data-i18n="lang_arabic">Arabe</span>
+              <span class="lang-level" data-i18n="lang_native">Langue maternelle</span>
+            </div>
+            <div class="lang-dots"><span class="dot active"></span><span class="dot active"></span><span
+                class="dot active"></span><span class="dot active"></span><span class="dot active"></span></div>
+          </div>
+          <div class="lang-card glass-card">
+            <div class="lang-flag">🇫🇷</div>
+            <div class="lang-info">
+              <span class="lang-name" data-i18n="lang_french">Français</span>
+              <span class="lang-level" data-i18n="lang_fluent">Courant</span>
+            </div>
+            <div class="lang-dots"><span class="dot active"></span><span class="dot active"></span><span
+                class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+          </div>
+          <div class="lang-card glass-card">
+            <div class="lang-flag">🇬🇧</div>
+            <div class="lang-info">
+              <span class="lang-name" data-i18n="lang_english">Anglais</span>
+              <span class="lang-level" data-i18n="lang_fluent">Courant</span>
+            </div>
+            <div class="lang-dots"><span class="dot active"></span><span class="dot active"></span><span
+                class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="contact_label">Collaboration</span>
+        <h2 class="section-title" data-i18n="contact_title">Me contacter</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="contact_phone_label">Téléphone</span>
+              <a href="tel:+21622877051" class="contact-value">(+216) 22 877 051</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="contact_email_label">E-mail</span>
+              <a href="mailto:rajahemdi2019@gmail.com" class="contact-value">rajahemdi2019@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label" data-i18n="contact_address_label">Adresse</span>
+              <span class="contact-value">Ariana 2080, Tunis, Tunisie</span>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="#contact" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i>
+              <span data-i18n="cta_contact">Me contacter</span>
+            </a>
+            <a href="mailto:rajahemdi2019@gmail.com" class="btn btn-secondary btn-full">
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="cta_email">Envoyer un e-mail</span>
+            </a>
+            <a href="tel:+21622877051" class="btn btn-outline btn-full">
+              <i class="fas fa-phone"></i>
+              <span data-i18n="cta_call">Appeler maintenant</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-visual glass-card">
+          <div class="cv-orb"></div>
+          <div class="contact-visual-inner">
+            <div class="cv-initials">HR</div>
+            <p class="cv-title" data-i18n="cv_title">Administrative & Financial Manager</p>
+            <p class="cv-location"><i class="fas fa-map-marker-alt"></i> Tunis, Tunisie</p>
+            <div class="cv-divider"></div>
+            <p class="cv-quote" data-i18n="cv_quote">"Rigueur · Excellence · Innovation"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-initials">HR</span>
+          <div>
+            <p class="footer-name">Hemdi Raja</p>
+            <p class="footer-role" data-i18n="footer_role">Administrative & Financial Manager</p>
+          </div>
+        </div>
+        <nav class="footer-links">
+          <a href="#hero" data-i18n="nav_home">Accueil</a>
+          <a href="#about" data-i18n="nav_about">À propos</a>
+          <a href="#experience" data-i18n="nav_exp">Expérience</a>
+          <a href="#skills" data-i18n="nav_skills">Compétences</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2025 Hemdi Raja — <span data-i18n="footer_rights">Tous droits réservés</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

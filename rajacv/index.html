@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hemdi Raja - Next-Generation Executive Portfolio">
+    <title>Hemdi Raja | Executive Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for elegant minimalist icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="theme-dark" data-lang="en">
+    <div id="cursor-glow" class="cursor-glow"></div>
+    <div class="ambient-background"></div>
+
+    <nav class="executive-nav">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-logo">HR</span>
+                <span class="brand-name">HEMDI RAJA</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a>
+                <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-set-lang="en">EN</button>
+                    <button class="lang-btn" data-set-lang="fr">FR</button>
+                    <button class="lang-btn" data-set-lang="ar">AR</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="ph ph-sun light-icon"></i>
+                    <i class="ph ph-moon dark-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="holographic-interface">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="executive-badge">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero.status">System Online • Ready</span>
+                    </div>
+                    <h1 class="hero-title" data-i18n="hero.title">Architecting Financial Clarity and Administrative
+                        Excellence for the Future</h1>
+                    <h2 class="hero-subtitle" data-i18n="hero.subtitle">Hemdi Raja — Administrative and Financial
+                        Manager</h2>
+
+                    <div class="hero-contact-info">
+                        <div class="info-item">
+                            <i class="ph ph-phone"></i>
+                            <span>(+216) 22 877 051</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ph ph-envelope"></i>
+                            <span>rajahemdi2019@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="ph ph-map-pin"></i>
+                            <span data-i18n="hero.location">Ariana 2080, Tunis</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#experience" class="btn btn-primary">
+                            <span data-i18n="hero.explore">Explore Experience</span>
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="ph ph-download-simple"></i>
+                            <span data-i18n="hero.download">Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span data-i18n="hero.contact">Contact Me</span>
+                        </a>
+                    </div>
+
+                    <div class="executive-indicators">
+                        <div class="indicator">
+                            <div class="indicator-value">10+</div>
+                            <div class="indicator-label" data-i18n="hero.ind1">Years Experience</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-value">Top</div>
+                            <div class="indicator-label" data-i18n="hero.ind2">Finance & Admin</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-value">3</div>
+                            <div class="indicator-label" data-i18n="hero.ind3">Languages</div>
+                        </div>
+                        <div class="indicator">
+                            <div class="indicator-value">Pro</div>
+                            <div class="indicator-label" data-i18n="hero.ind4">Digital Mastery</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="portrait-container">
+                        <div class="holographic-ring"></div>
+                        <img src="profile.jpg" alt="Hemdi Raja" class="portrait-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about.title">Executive Profile</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="glass-card about-card">
+                    <i class="ph ph-quotes highlight-icon"></i>
+                    <p class="about-text" data-i18n="about.desc">
+                        A professional in administration, finance, management, and accounting, with solid experience and
+                        a mastery of IT tools. I am ready to put my skills at the service of your organization.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="exp.title">Career Architecture</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.1.role">Administrative and Financial Manager
+                                    </h3>
+                                    <h4 class="exp-company">JANENE RENT A CAR - Tunis, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">10/2019 - <span data-i18n="exp.present">Present</span></div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.1.d1">Monthly classification of accounting files and preparation of
+                                    payroll</li>
+                                <li data-i18n="exp.1.d2">Preparation of withholding taxes</li>
+                                <li data-i18n="exp.1.d3">Debt collection</li>
+                                <li data-i18n="exp.1.d4">Preparation of sales and car rental contracts, invoicing on
+                                    Dolibarr software</li>
+                                <li data-i18n="exp.1.d5">Preparation of quotes with reservation by email and
+                                    communication with customers</li>
+                                <li data-i18n="exp.1.d6">Monitoring of the vehicle fleet activity</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.2.role">Accounting Assistant</h3>
+                                    <h4 class="exp-company">Cabinet Ahmed Ben Moallem - Tunis, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">10/2018 - 03/2019</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.2.d1">Payroll preparation</li>
+                                <li data-i18n="exp.2.d2">Elaboration of fiscal and social declarations</li>
+                                <li data-i18n="exp.2.d3">Preparation of provisional installments</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.3.role">Accounting Assistant</h3>
+                                    <h4 class="exp-company">Cabinet Coffice Hafedh Boukhris - Tunis, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">10/2015 - 06/2017</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.3.d1">Entry of various accounting documents</li>
+                                <li data-i18n="exp.3.d2">Entry and validation of bank documents</li>
+                                <li data-i18n="exp.3.d3">Establishment of bank reconciliation</li>
+                                <li data-i18n="exp.3.d4">Justification of accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.4.role">Management Controller</h3>
+                                    <h4 class="exp-company">AL Multimédia - Tunis, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">06/2014 - 03/2015</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.4.d1">Establish activity forecasts in terms of objectives, budgets,
+                                    and organization for a variety of products using IT analysis tools</li>
+                                <li data-i18n="exp.4.d2">Identify significant deviations between achievements and
+                                    forecasts</li>
+                                <li data-i18n="exp.4.d3">Develop and adapt analysis tools for commented dashboards</li>
+                                <li data-i18n="exp.4.d4">Measure and analyze discrepancies in the form of statistics
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.5.role">Surveyor</h3>
+                                    <h4 class="exp-company">ITCEQ - Sousse, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">05/2013 - 07/2013</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.5.d1">Statistics on the environment and the financial state of
+                                    companies</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="glass-panel exp-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp.6.role">End-of-Studies Internship</h3>
+                                    <h4 class="exp-company">ICAR - Sousse, Tunisia</h4>
+                                </div>
+                                <div class="exp-date">04/2013 - 06/2013</div>
+                            </div>
+                            <ul class="exp-details">
+                                <li data-i18n="exp.6.d1">Economic intelligence and business strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="edu.title">Academic Foundation</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="edu-grid">
+                    <div class="glass-card edu-card">
+                        <div class="edu-year">2013</div>
+                        <h3 class="edu-degree" data-i18n="edu.1.degree">Professional Master's Degree in Business
+                            Engineering and International Trade</h3>
+                        <p class="edu-school" data-i18n="edu.1.school">Faculty of Economic Sciences and Management of
+                            Sousse (FSEGS)</p>
+                    </div>
+                    <div class="glass-card edu-card">
+                        <div class="edu-year">2011</div>
+                        <h3 class="edu-degree" data-i18n="edu.2.degree">Bachelor's Degree in Management, Finance
+                            Specialty</h3>
+                        <p class="edu-school" data-i18n="edu.2.school">Faculty of Law and Economic and Political
+                            Sciences of Sousse (FDSEPS)</p>
+                    </div>
+                    <div class="glass-card edu-card">
+                        <div class="edu-year">2007</div>
+                        <h3 class="edu-degree" data-i18n="edu.3.degree">Baccalaureate in Experimental Sciences</h3>
+                        <p class="edu-school" data-i18n="edu.3.school">Sbikha High School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills.title">Executive Intelligence Matrix</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="glass-panel skill-category">
+                        <div class="skill-cat-header">
+                            <i class="ph ph-briefcase"></i>
+                            <h3 data-i18n="skills.cat1">Functional Expertise</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag" data-i18n="s1">Financial Services</span>
+                            <span class="skill-tag" data-i18n="s2">Administrative Management</span>
+                            <span class="skill-tag" data-i18n="s3">Accounting</span>
+                            <span class="skill-tag" data-i18n="s4">Payroll preparation</span>
+                            <span class="skill-tag" data-i18n="s5">Tax declarations</span>
+                            <span class="skill-tag" data-i18n="s6">Debt collection</span>
+                            <span class="skill-tag" data-i18n="s7">Budget monitoring</span>
+                            <span class="skill-tag" data-i18n="s8">Bank reconciliation</span>
+                            <span class="skill-tag" data-i18n="s9">Customer communication</span>
+                            <span class="skill-tag" data-i18n="s10">Fleet activity monitoring</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="glass-panel skill-category">
+                        <div class="skill-cat-header">
+                            <i class="ph ph-desktop"></i>
+                            <h3 data-i18n="skills.cat2">Software Proficiency</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Dolibarr</span>
+                            <span class="skill-tag">Odoo</span>
+                            <span class="skill-tag">Microsoft Word</span>
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Microsoft PowerPoint</span>
+                            <span class="skill-tag">OnlyLogiciel</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="glass-panel skill-category">
+                        <div class="skill-cat-header">
+                            <i class="ph ph-code"></i>
+                            <h3 data-i18n="skills.cat3">Digital & Interface Awareness</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">UI/UX</span>
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES SECTION -->
+        <section id="languages" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="lang.title">Linguistic Capability</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="lang-grid">
+                    <div class="glass-card lang-card">
+                        <div class="lang-icon">AR</div>
+                        <h3 data-i18n="lang.ar">Arabic</h3>
+                        <div class="lang-level">
+                            <div class="level-dots">
+                                <span class="dot active"></span><span class="dot active"></span><span
+                                    class="dot active"></span><span class="dot active"></span><span
+                                    class="dot active"></span>
+                            </div>
+                            <span data-i18n="lang.native">Native</span>
+                        </div>
+                    </div>
+                    <div class="glass-card lang-card">
+                        <div class="lang-icon">FR</div>
+                        <h3 data-i18n="lang.fr">French</h3>
+                        <div class="lang-level">
+                            <div class="level-dots">
+                                <span class="dot active"></span><span class="dot active"></span><span
+                                    class="dot active"></span><span class="dot active"></span><span class="dot"></span>
+                            </div>
+                            <span data-i18n="lang.fluent">Fluent</span>
+                        </div>
+                    </div>
+                    <div class="glass-card lang-card">
+                        <div class="lang-icon">EN</div>
+                        <h3 data-i18n="lang.en">English</h3>
+                        <div class="lang-level">
+                            <div class="level-dots">
+                                <span class="dot active"></span><span class="dot active"></span><span
+                                    class="dot active"></span><span class="dot active"></span><span class="dot"></span>
+                            </div>
+                            <span data-i18n="lang.fluent">Fluent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact.title">Secure Communication Gateway</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="glass-panel contact-info-panel">
+                        <h3 class="contact-subtitle" data-i18n="contact.info">Direct Lines</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact.phone">Phone Number</div>
+                                    <div class="contact-val">(+216) 22 877 051</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ph ph-envelope"></i></div>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact.email">Email Address</div>
+                                    <div class="contact-val">rajahemdi2019@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <div class="contact-label" data-i18n="contact.address">Address</div>
+                                    <div class="contact-val" data-i18n="hero.location">Ariana 2080, Tunis</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel contact-form-panel">
+                        <h3 class="contact-subtitle" data-i18n="contact.send">Initialize Transmission</h3>
+                        <form class="executive-form" onsubmit="event.preventDefault()">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.name">Identity (Name)</label>
+                                <input type="text" id="name" class="form-control" required
+                                    placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.email_field">Return Protocol (Email)</label>
+                                <input type="email" id="email" class="form-control" required
+                                    placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.message">Data Payload (Message)</label>
+                                <textarea id="message" rows="4" class="form-control" required
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <button class="btn btn-primary form-submit" type="submit">
+                                <span data-i18n="contact.submit">Transmit Message</span>
+                                <i class="ph ph-paper-plane-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="executive-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="footer-name">Hemdi Raja</span>
+                <span class="footer-title" data-i18n="footer.role">Administrative and Financial Manager</span>
+            </div>
+            <div class="footer-meta">
+                <span data-i18n="footer.copy">© 2060 All rights reserved. System V1.0</span>
+                <div class="footer-lang">
+                    <i class="ph ph-translate"></i> EN | FR | AR
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
