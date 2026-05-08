@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Slahdada | Développeur Full-Stack</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #333; }
+    .container { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.12); }
+    .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 40px; display: flex; align-items: center; gap: 30px; }
+    .avatar { width: 100px; height: 100px; border-radius: 50%; border: 4px solid #e94560; background: #e94560; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; }
+    .header-info h1 { font-size: 2rem; margin-bottom: 6px; }
+    .header-info h2 { font-size: 1rem; color: #a0b4d6; margin-bottom: 10px; }
+    .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge { background: rgba(233,69,96,0.2); border: 1px solid #e94560; color: #e94560; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+    .body { display: grid; grid-template-columns: 1fr 2fr; }
+    .sidebar { background: #1a1a2e; color: #cdd5e0; padding: 30px 24px; }
+    .main { padding: 30px; }
+    .section-title { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #e94560; margin-bottom: 14px; font-weight: bold; border-bottom: 1px solid #e94560; padding-bottom: 6px; }
+    .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-size: 0.88rem; }
+    .icon { font-size: 1rem; }
+    .skill-item { margin-bottom: 10px; }
+    .skill-name { font-size: 0.85rem; margin-bottom: 4px; display: flex; justify-content: space-between; }
+    .skill-bar { height: 6px; background: #2d3561; border-radius: 3px; overflow: hidden; }
+    .skill-fill { height: 100%; background: linear-gradient(90deg, #e94560, #0f3460); border-radius: 3px; }
+    .lang-item { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.85rem; }
+    .lang-level { color: #e94560; font-size: 0.75rem; }
+    .section { margin-bottom: 28px; }
+    .exp-item { margin-bottom: 20px; padding-left: 16px; border-left: 3px solid #e94560; }
+    .exp-title { font-weight: bold; font-size: 1rem; color: #1a1a2e; }
+    .exp-meta { font-size: 0.8rem; color: #888; margin: 4px 0 8px; }
+    .exp-desc { font-size: 0.88rem; color: #555; line-height: 1.6; }
+    .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .project-card { background: #f8f9fc; border: 1px solid #e0e4ef; border-radius: 8px; padding: 14px; transition: box-shadow 0.2s; }
+    .project-card:hover { box-shadow: 0 2px 12px rgba(233,69,96,0.15); }
+    .project-name { font-weight: bold; color: #1a1a2e; font-size: 0.92rem; margin-bottom: 4px; }
+    .project-lang { font-size: 0.75rem; color: #fff; background: #0f3460; padding: 2px 8px; border-radius: 10px; display: inline-block; margin-bottom: 6px; }
+    .project-desc { font-size: 0.8rem; color: #666; line-height: 1.5; }
+    .project-link { font-size: 0.78rem; color: #e94560; text-decoration: none; display: block; margin-top: 6px; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { background: #e8f0fe; color: #1a1a2e; padding: 4px 10px; border-radius: 12px; font-size: 0.78rem; }
+    @media print { body { background: #fff; } .container { box-shadow: none; } }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="avatar">SL</div>
+    <div class="header-info">
+      <h1>Slahdada</h1>
+      <h2>Développeur Full-Stack &amp; Mobile | Tunis, Tunisie</h2>
+      <div class="badges">
+        <span class="badge">TypeScript</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Java</span>
+        <span class="badge">HTML/CSS</span>
+        <span class="badge">Flutter</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="section">
+        <div class="section-title">Contact</div>
+        <div class="contact-item"><span class="icon">&#127760;</span> Tunis, Tunisie</div>
+        <div class="contact-item"><span class="icon">&#128279;</span> github.com/slahdada</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Compétences Techniques</div>
+        <div class="skill-item">
+          <div class="skill-name"><span>TypeScript / JS</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>HTML / CSS</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Java</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Flutter / Dart</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Git / GitHub</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Outils &amp; Plateformes</div>
+        <div class="tag-list">
+          <span class="tag" style="background:#2d3561;color:#fff;">Next.js</span>
+          <span class="tag" style="background:#2d3561;color:#fff;">Vercel</span>
+          <span class="tag" style="background:#2d3561;color:#fff;">Cloudflare</span>
+          <span class="tag" style="background:#2d3561;color:#fff;">Netlify</span>
+          <span class="tag" style="background:#2d3561;color:#fff;">VS Code</span>
+          <span class="tag" style="background:#2d3561;color:#fff;">Android Studio</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Langues</div>
+        <div class="lang-item"><span>Arabe</span><span class="lang-level">Natif</span></div>
+        <div class="lang-item"><span>Français</span><span class="lang-level">Courant</span></div>
+        <div class="lang-item"><span>Anglais</span><span class="lang-level">Intermédiaire</span></div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Statistiques GitHub</div>
+        <div style="font-size:0.85rem;">
+          <div style="margin-bottom:6px;">&#128193; <strong>18</strong> Repositories</div>
+          <div style="margin-bottom:6px;">&#127775; 1 Follower</div>
+          <div>&#128736; Langages: TS, JS, Java, HTML, CSS</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <div class="section">
+        <div class="section-title">Profil</div>
+        <p style="font-size:0.9rem;color:#555;line-height:1.7;">Développeur passionné basé à Tunis, Tunisie. Spécialisé dans le développement web Full-Stack avec TypeScript/JavaScript et le développement mobile avec Flutter. Actif sur GitHub avec 18 repositories couvrant des applications web, mobiles, et des outils pratiques.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projets GitHub</div>
+        <div class="project-grid">
+
+          <div class="project-card">
+            <div class="project-name">oussamaprm</div>
+            <span class="project-lang">TypeScript</span>
+            <div class="project-desc">Application web TypeScript — développement professionnel moderne.</div>
+            <a class="project-link" href="https://github.com/slahdada/oussamaprm">github.com/slahdada/oussamaprm</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">slahtvpc</div>
+            <span class="project-lang">TypeScript</span>
+            <div class="project-desc">Projet TV/streaming en TypeScript — interface moderne.</div>
+            <a class="project-link" href="https://github.com/slahdada/slahtvpc">github.com/slahdada/slahtvpc</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">ayaritvpc</div>
+            <span class="project-lang">TypeScript</span>
+            <div class="project-desc">SDK TypeScript pour application TV/streaming.</div>
+            <a class="project-link" href="https://github.com/slahdada/ayaritvpc">github.com/slahdada/ayaritvpc</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">fathiadam</div>
+            <span class="project-lang">TypeScript</span>
+            <div class="project-desc">Projet TypeScript avancé — développement client/professionnel.</div>
+            <a class="project-link" href="https://github.com/slahdada/fathiadam">github.com/slahdada/fathiadam</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">monclavier</div>
+            <span class="project-lang">TypeScript</span>
+            <div class="project-desc">Application de clavier ou outil de saisie en TypeScript.</div>
+            <a class="project-link" href="https://github.com/slahdada/monclavier">github.com/slahdada/monclavier</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">salatbechir</div>
+            <span class="project-lang">Java</span>
+            <div class="project-desc">Application Java — horaires de prière / salat pour mobile Android.</div>
+            <a class="project-link" href="https://github.com/slahdada/salatbechir">github.com/slahdada/salatbechir</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">adamfathi</div>
+            <span class="project-lang">HTML</span>
+            <div class="project-desc">Site web HTML — projet de présentation ou portfolio.</div>
+            <a class="project-link" href="https://github.com/slahdada/adamfathi">github.com/slahdada/adamfathi</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">htmlazan</div>
+            <span class="project-lang">HTML</span>
+            <div class="project-desc">Application web pour l'azan / appel à la prière en HTML.</div>
+            <a class="project-link" href="https://github.com/slahdada/htmlazan">github.com/slahdada/htmlazan</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">saber_auto</div>
+            <span class="project-lang">JavaScript</span>
+            <div class="project-desc">Projet d'automatisation / outil JavaScript pratique.</div>
+            <a class="project-link" href="https://github.com/slahdada/saber_auto">github.com/slahdada/saber_auto</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">monarab</div>
+            <span class="project-lang">JavaScript</span>
+            <div class="project-desc">Application JavaScript orientée contenu arabe.</div>
+            <a class="project-link" href="https://github.com/slahdada/monarab">github.com/slahdada/monarab</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">iptv</div>
+            <span class="project-lang">JavaScript</span>
+            <div class="project-desc">Collection de chaînes IPTV publiques du monde entier.</div>
+            <a class="project-link" href="https://github.com/slahdada/iptv">github.com/slahdada/iptv</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">cv_raja_janencar</div>
+            <span class="project-lang">HTML</span>
+            <div class="project-desc">Templates CV professionnels en HTML — plusieurs modèles.</div>
+            <a class="project-link" href="https://github.com/slahdada/cv_raja_janencar">github.com/slahdada/cv_raja_janencar</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Domaines d'Expertise</div>
+        <div class="tag-list">
+          <span class="tag">Développement Web Full-Stack</span>
+          <span class="tag">Applications Mobile (Flutter/Java)</span>
+          <span class="tag">TypeScript / JavaScript</span>
+          <span class="tag">API REST</span>
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Déploiement Cloud (Vercel, Cloudflare)</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">Applications Islamiques</span>
+          <span class="tag">Streaming / IPTV</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
